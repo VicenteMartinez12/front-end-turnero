@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Template</title>
+    <style>
+        .tabla {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 1%;
+        }
+
+        .tabla th,
+        .tabla td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+           
+        }
+
+        .tabla tr {
+            height: 100px; /* Establece una altura fija para todas las filas */
+        }
+
+        .tabla img {
+            max-width: 200px; /* Establece el ancho máximo */
+            max-height: 100px; /* Establece la altura máxima */
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; align-items: center;">
+        <div style="max-width: 100%; width: 100%; height: 100%;">
+            <div style="height: 100%; display: flex; flex-direction: column;">
+                <div style="display: flex; justify-content: center; align-items: center; height: 100%; margin-top: 0%;">
+                    <table style="width: 100%; height: 88%; font-size: 50px;" class="tabla">
+                        <thead>
+                            <tr>
+                                <th style="font-size: 100px; background-color: #1d3f93; color: antiquewhite; text-align: center;">Stand</th>
+                                <th style="font-size: 100px; background-color: #1d3f93; color: antiquewhite; font-weight: bold; width: 70%; padding: 0px; text-align: center;">Próximos turnos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="img/marcas/dixon.png" alt=""></td>
+                                <td>Posiciones </td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/marcas/newell.png" alt=""></td>
+                                <td>Posiciones </td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/marcas/norma.png" alt=""></td>
+                                <td>Posiciones </td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/marcas/smart.png" alt=""></td>
+                                <td>Posiciones </td>
+                            </tr>
+                            <tr>
+                                <td ><img src="img/marcas/scribe.png" alt=""></td>
+                                <td>Posiciones </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleButtonClick() {
+            window.location.href = '/pasillo';
+        }
+    </script>
+</body>
+
+</html>
