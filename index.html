@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue Template</title>
+    <title>Pasillo Turnero</title>
     <style>
         .tabla {
             border-collapse: collapse;
             width: 100%;
             margin-top: 1%;
+        }
+        @media (max-width: 800px) {
+            .tabla{
+                width: 100%;
+                background-color: blue;
+            }
         }
 
         .tabla th,
@@ -17,6 +23,9 @@
             border: 1px solid black;
             padding: 8px;
             text-align: center;
+            font-size: 80px;
+            font-weight: bold;
+ 
            
         }
 
@@ -27,6 +36,12 @@
         .tabla img {
             max-width: 200px; /* Establece el ancho máximo */
             max-height: 100px; /* Establece la altura máxima */
+        }
+
+        .tabla td:last-child {
+            text-align: left; /* Alinea el contenido de la última columna a la izquierda */
+            font-size: 130px;
+            margin-right: 10%;
         }
         
     </style>
@@ -45,25 +60,25 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr >
                                 <td><img src="img/marcas/dixon.png" alt=""></td>
-                                <td>Posiciones </td>
+                                <td >15 16 17 18 19 20</td>
                             </tr>
                             <tr>
                                 <td><img src="img/marcas/newell.png" alt=""></td>
-                                <td>Posiciones </td>
+                                <td>1 2 3 4 5 6 </td>
                             </tr>
                             <tr>
                                 <td><img src="img/marcas/norma.png" alt=""></td>
-                                <td>Posiciones </td>
+                                <td >25 26 27 28 29 20</td>
                             </tr>
                             <tr>
                                 <td><img src="img/marcas/smart.png" alt=""></td>
-                                <td>Posiciones </td>
+                                <td >45 46 47 48 49 20</td>
                             </tr>
                             <tr>
                                 <td ><img src="img/marcas/scribe.png" alt=""></td>
-                                <td>Posiciones </td>
+                                <td >35 36 37 38 39 20</td>
                             </tr>
                         </tbody>
                     </table>
