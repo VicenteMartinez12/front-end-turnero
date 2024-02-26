@@ -9,15 +9,10 @@
         .tabla {
             border-collapse: collapse;
             width: 100%;
-            margin-top: 1%;
+            margin-top: 2%;
         }
 
-        @media (max-width: 800px) {
-            .tabla {
-                width: 100%;
-                background-color: blue;
-            }
-        }
+       
 
         .tabla th,
         .tabla td {
@@ -26,7 +21,9 @@
             text-align: center;
             font-size: 80px;
             font-weight: bold;
-            
+           
+        
+           
             
         }
 
@@ -47,16 +44,23 @@
             /* Alinea el contenido de la última columna a la izquierda */
             font-size: 130px;
             margin-right: 10%;
+          
         }
 
         .numeros {
-            display: flex;
+      display: flex;
             justify-content: space-between;
+
             padding: 0 10px;
             font-size: 50px;
+            text-align: start;
+            width: 99.5%;
+            
+            
+          
             
         }
-
+     
     
    
         
@@ -67,18 +71,18 @@
     <div style="display: flex; align-items: center;">
         <div style="max-width: 100%; width: 100%; height: 100%;">
             <div style="height: 100%; display: flex; flex-direction: column;">
-                <div style="display: flex; justify-content: center; align-items: center; height: 100%; margin-top: 0%;">
+                <div style=" justify-content: center; align-items: center; height: 100%; margin-top: 0%;">
                     <table style="width: 100%; height: 88%; font-size: 50px;" class="tabla">
                         <thead>
                             <tr>
                                 <th style="font-size: 100px; background-color: #1d3f93; color: antiquewhite; text-align: center;">Stand</th>
-                                <th style="font-size: 100px; background-color: #1d3f93; color: antiquewhite; width: 88.2%; display: flex;  text-align: center; ">Próximos turnos</th>
+                                <th style="font-size: 100px; background-color: #1d3f93; color: antiquewhite;    text-align: center; ">Próximos turnos</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><img src="img/marcas/dixon.png" alt=""></td>
-                                <td class="numeros">
+                                <td  class="numeros">
                                     <div>15</div>
                                     <div>16</div>
                                     <div>17</div>
