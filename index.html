@@ -14,17 +14,26 @@
 
        
 
-        .tabla th,
+     
         .tabla td {
-            border: 1px solid black;
+           
             padding: 8px;
-            text-align: center;
+            border: 1px solid black;
             font-size: 80px;
             font-weight: bold;
+            align-items: center;
+            text-align: center;
+           
            
         
            
             
+        }
+        .tabla th{
+            padding: 8px;
+            border: 1px solid black;
+            font-size: 80px;
+            font-weight: bold;
         }
 
         .tabla tr {
@@ -53,12 +62,32 @@
 
             padding: 0 10px;
             font-size: 50px;
-            text-align: start;
+  
             width: 98.8%;
+            
+
             
             
           
             
+        }
+
+        @keyframes blink {
+            0% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: transparent;
+            }
+
+            100% {
+                background-color: yellow;
+            }
+        }
+
+        .parpadeo {
+            animation: blink 1s infinite;
         }
      
     
@@ -92,12 +121,12 @@
                             </tr>
                             <tr>
                                 <td><img src="img/marcas/newell.png" alt=""></td>
-                                <td class="numeros">
-                                    <div>1</div>
-                                    <div>2</div>
-                                    <div>3</div>
-                                    <div>4</div>
-                                    <div>5</div>
+                                <td style="align-content: center;" class="numeros">
+                                    <div>12</div>
+                                    <div>25</div>
+                                    <div>33</div>
+                                    <div>45</div>
+                                    <div>58</div>
                                 </td>
                             </tr>
                             <tr>
@@ -113,11 +142,11 @@
                             <tr>
                                 <td><img src="img/marcas/smart.png" alt=""></td>
                                 <td class="numeros">
-                                    <div>145</div>
-                                    <div>146</div>
-                                    <div>147</div>
-                                    <div>148</div>
-                                    <div>149</div>
+                                    <div class="parpadeo">108</div>
+                                    <div class="parpadeo">109</div>
+                                    <div>110</div>
+                                    <div>111</div>
+                                    <div>112</div>
                                 </td>
                             </tr>
                             <tr>
@@ -138,9 +167,10 @@
     </div>
 
     <script>
-        function handleButtonClick() {
-            window.location.href = '/pasillo';
-        }
+       
+
+   
+       
     </script>
 </body>
 
