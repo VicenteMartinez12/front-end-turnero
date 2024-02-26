@@ -11,8 +11,9 @@
             width: 100%;
             margin-top: 1%;
         }
+
         @media (max-width: 800px) {
-            .tabla{
+            .tabla {
                 width: 100%;
                 background-color: blue;
             }
@@ -25,25 +26,33 @@
             text-align: center;
             font-size: 80px;
             font-weight: bold;
- 
-           
         }
 
         .tabla tr {
-            height: 100px; /* Establece una altura fija para todas las filas */
+            height: 100px;
+            /* Establece una altura fija para todas las filas */
         }
 
         .tabla img {
-            max-width: 300px; /* Establece el ancho máximo */
-            max-height: 100px; /* Establece la altura máxima */
+            max-width: 300px;
+            /* Establece el ancho máximo */
+            max-height: 100px;
+            /* Establece la altura máxima */
         }
 
         .tabla td:last-child {
-            text-align: left; /* Alinea el contenido de la última columna a la izquierda */
+            text-align: left;
+            /* Alinea el contenido de la última columna a la izquierda */
             font-size: 130px;
             margin-right: 10%;
         }
-        
+
+        .numeros {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            font-size: 50px;
+        }
     </style>
 </head>
 
@@ -60,25 +69,55 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr >
+                            <tr>
                                 <td><img src="img/marcas/dixon.png" alt=""></td>
-                                <td >15 16 17 18 19 20</td>
+                                <td class="numeros">
+                                    <div>15</div>
+                                    <div>16</div>
+                                    <div>17</div>
+                                    <div>18</div>
+                                    <div>19</div>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src="img/marcas/newell.png" alt=""></td>
-                                <td>1 2 3 4 5 6 </td>
+                                <td class="numeros">
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div>3</div>
+                                    <div>4</div>
+                                    <div>5</div>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src="img/marcas/norma.png" alt=""></td>
-                                <td >25 26 27 28 29 20</td>
+                                <td class="numeros">
+                                    <div>25</div>
+                                    <div>26</div>
+                                    <div>27</div>
+                                    <div>28</div>
+                                    <div>29</div>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src="img/marcas/smart.png" alt=""></td>
-                                <td >145 146 147 148 149</td>
+                                <td class="numeros">
+                                    <div>145</div>
+                                    <div>146</div>
+                                    <div>147</div>
+                                    <div>148</div>
+                                    <div>149</div>
+                                </td>
                             </tr>
                             <tr>
-                                <td ><img src="img/marcas/scribe.png" alt=""></td>
-                                <td >35 36 37 38 39 20</td>
+                                <td><img src="img/marcas/scribe.png" alt=""></td>
+                                <td class="numeros">
+                                    <div>35</div>
+                                    <div>36</div>
+                                    <div>37</div>
+                                    <div>38</div>
+                                    <div>39</div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
